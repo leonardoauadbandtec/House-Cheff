@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Lobster-Regular.ttf);
+}
+
+.fundo{
+    background-image: url(./comida.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav p{
+    float: left;
+    font-family: initial;
+    width: 78vw;
+    font-size: 2.2em;
+    margin-left: 10px
+
+}
+.assista{
+    display: flex;
+    position: fixed;
+    margin-top: 60vh;
+    margin-left: 10vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+    padding: 5px 20px;
+}
+
+.cadastro{
+    
+    margin-top: 10vh; 
+    position: initial;
+    float:right;
+    background-color: white;
+    width: 25vw;
+    height: 70vh;
+    border-radius: 5px; 
+    margin-right: 17vw;
+    
+}
+
+.entrar{
+    margin-left: 4vw;
+}
+
+.login{
+
+}
+
+.login:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.top{
+    font-size: 30px;
+    border: 10px solid transparent;
+    display: block;
+    margin-left: 75px;
+
+    
+}
+
+.cadastro input{
+    width: 70%;
+    margin-left: 4vw;
+    height: 4%;
+}
+
+.media{
+    height: 40px;
+    width: 20vw;
+    float: right;
+    list-style-type: none;
+    padding: 5px;
+
+}
+
+.insta{
+    height: 100%;
+    width: 30%;
+    background: url("./insta.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.facebook{
+    height: 100%;
+    width: 20%;
+    background: url("./facebook.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.twitter{
+    height: 100%;
+    width: 27%;
+    background: url("./twitter.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.cadastro label{
+    margin-left: 4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cadastro button{
+    margin-left: 4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagem2 {
+    display: flex;
+    margin-left: 15vw;
+    float:left;
+    background-image: url(./cheff_hat-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 40vh;
+    /* border: 1px dashed red; */
+    margin-right: 17vw;
+    margin-top: 10vh;
+}
+
+.imagem3 {
+    display: flex;
+    float: left;
+    border: 1px solid red;
+    margin-right: 40vw;
+    height: 80px;
+}
+
+
+
+.cheff {
+    font-family: myFirstFont;
+    display: flex;
+    position: fixed;
+    margin-top: 50vh;
+    margin-left: 19.5vw;
+    font-size: 260%;
+}
+
+
