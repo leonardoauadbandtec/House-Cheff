@@ -16,31 +16,28 @@
         <div class="teste">
             
             <div class="imagem2"></div>
-            <div class="cheff">House Cheff</div>
+            <div class="cheff">Dice Roll</div>
                     <div class="assista">
-                        <h2>Faça receitas deliciosas<br> com os ingredientes que você tem em casa!</h2> <br>
+                        <h2>Dados de D&D</h2> <br>
                     </div>
 
         </div>
-        <div class="cadastro">
+        <form class="cadastro" id="form_cadastro" method="post" onsubmit="return cadastrar()">
             <label class="top">Cadastre-se!</label> <br>
             
             <label class="campo">Nome de usuário: </label>
-            <input class="text" id="user"><br><br>
+            <input class="text" name="nome" id="user"><br><br>
             
             <label class="campo">Email:</label>  <br>
-            <input class="text" id="email"><br><br>
+            <input class="text" name="login" id="email"><br><br>
             
             <label class="campo">Senha:</label>  <br>
-            <input class="text" id="senha"><br><br>
+            <input class="text" name="senha" id="senha"><br><br>
             
-            <label class="campo">Confirme sua senha:</label>  
-            <input class="text" id="senhaconf"><br><br>
-            
-            <button onclick="criar()">Criar conta</button><br><br>
+            <button id="btn_entrar">Criar conta</button><br><br>
 
-            <div class="entrar">Já possui uma conta? <span class="login">Entrar</span></div>
-        </div>
+            <div class="entrar">Já possui uma conta? <span class="login"><a href="login.html">Entrar</a></span></div>
+        </form>
         
 
     </div>
@@ -48,3 +45,37 @@
 </body>
 
 </html>
+<script>
+function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='homepage.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+    }
+
+</script>

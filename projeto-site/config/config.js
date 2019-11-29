@@ -10,7 +10,7 @@ module.exports = {
   production: {
     username: 'root',
     password: 'bandtec',
-    database: 'nomeBanco',
+    database: 'usuario',
     host: '0.0.0.0',
     dialect: 'mysql',
   }
