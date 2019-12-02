@@ -1,1 +1,78 @@
-deu certo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styleDice.css">
+</head>
+<body>
+
+<div class="fundo">
+
+    <div class="imagemlogo"></div>
+    <div class="rolamento">
+        <div class="escolha">Escolha um dado para rolar: <br><br><br></div>
+
+        <div class="d"><button class="button" onclick="d4()">D4</button></div><br>
+        <div class="d"><button class="button" onclick="d6()">D6</button></div><br>
+        <div class="d"><button class="button" onclick="d8()">D8</button></div><br>
+        <div class="d"><button class="button" onclick="d10()">D10</button></div><br>
+        <div class="d"><button class="button" onclick="d12()">D12</button></div><br>
+        <div class="d"><button class="button" onclick="d20()">D20</button></div><br>
+        <div class="d"><button class="button" onclick="d30()">D30</button></div><br>
+        <div class="d"><button class="button" onclick="d100()">D100</button></div><br>
+
+        <div class="div_result" id="div_resultado"></div>
+    </div>
+    <div class="imagemlogo2"></div>
+</div>
+    
+</body>
+</html>
+<script>
+    var sorteado = '';
+    
+
+    function d4() {
+        sorteado = parseInt(Math.random()*4)+1;
+        div_resultado.innerHTML = sorteado;
+    }
+
+    function d6() {
+        sorteado = parseInt(Math.random()*6)+1;
+        div_resultado.innerHTML = sorteado;
+    }
+
+    function d8() {
+        sorteado = parseInt(Math.random()*8)+1;
+        div_resultado.innerHTML = sorteado;
+    }
+
+    function d10() {
+        sorteado = parseInt(Math.random()*10)+1;
+        div_resultado.innerHTML = sorteado;
+    }
+
+    function d12() {
+        sorteado = parseInt(Math.random()*12)+1;
+        div_resultado.innerHTML = sorteado;
+    }
+
+    function d20() {
+        sorteado = parseInt(Math.random()*20)+1;
+        div_resultado.innerHTML = sorteado;
+    }
+
+    function d30() {
+        sorteado = parseInt(Math.random()*30)+1;
+        div_resultado.innerHTML = sorteado;
+    }
+
+    function d100() {
+        sorteado = parseInt(Math.random()*100)+1;
+        div_resultado.innerHTML = sorteado;
+    }
+
+</script>

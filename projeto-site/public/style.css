@@ -10,7 +10,7 @@
 }
 
 .fundo{
-    background-image: url(./comida.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -27,23 +27,25 @@
 
 }
 .assista{
+    color: white;
     display: flex;
     position: fixed;
     margin-top: 60vh;
     margin-left: 10vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 100%;
+    font-family: modesto-condensed, serif;
+    font-style: normal;
+    font-weight: 200;
     padding: 5px 20px;
 }
 
 .cadastro{
     
-    margin-top: 10vh; 
+    margin-top: 15vh; 
     position: initial;
     float:right;
     background-color: white;
     width: 25vw;
-    height: 70vh;
+    height: 40vh;
     border-radius: 5px; 
     margin-right: 17vw;
     
@@ -86,35 +88,6 @@
 
 }
 
-.insta{
-    height: 100%;
-    width: 30%;
-    background: url("./insta.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    float: left;
-}
-
-.facebook{
-    height: 100%;
-    width: 20%;
-    background: url("./facebook.png");
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-    float: left;
-}
-
-.twitter{
-    height: 100%;
-    width: 27%;
-    background: url("./twitter.png");
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-    float: left;
-}
 
 .cadastro label{
     margin-left: 4vw;
@@ -130,7 +103,7 @@
     display: flex;
     margin-left: 15vw;
     float:left;
-    background-image: url(./cheff_hat-removebg-preview.png);
+    background-image: url(./dedlogo.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 25vw;
@@ -151,11 +124,14 @@
 
 
 .cheff {
-    font-family: myFirstFont;
+    color: white;
+    font-family: modesto-condensed, serif;
+    font-style: normal;
+    font-weight: 300;
     display: flex;
     position: fixed;
     margin-top: 50vh;
-    margin-left: 19.5vw;
+    margin-left: 22vw;
     font-size: 260%;
 }
 

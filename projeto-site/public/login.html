@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="styleLogin.css">
 </head>
 <body>
-<form id="form_login" method="post" onsubmit="return entrar()">
-    login: <input type="text" name="login">
-    senha: <input type="password" name="senha">
-
-    <button id="btn_entrar">Entrar</button>
-</form>
+<div class="fundo">
+    <div class="formulario">
+        <form id="form_login" method="post" onsubmit="return entrar()">
+            <label class="log">Login </label><br>
+            <input type="text" name="login"><br><br>
+            <label class="pass">Senha </label><br>
+            <input type="password" name="senha">
+            <br><br>
+            <button id="btn_entrar">Entrar</button>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
